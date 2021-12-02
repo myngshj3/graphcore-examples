@@ -1,0 +1,1208 @@
+!!python/object:networkx.classes.digraph.DiGraph
+_adj: &id021
+  '1':
+    '4': &id017
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Data flows
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: &id001
+        - white
+        - blue
+        - green
+        - yellow
+        - cyan
+        - lightpink
+        - lightblue
+        - gray
+        - lightgray
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Data flows
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: &id002
+        - dataflow
+        type: str
+        value: dataflow
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+  '2':
+    '5': &id019
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Data flows
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id001
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Data flows
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id002
+        type: str
+        value: dataflow
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+  '3': {}
+  '4':
+    '2': &id013
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Data flows
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id001
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Data flows
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id002
+        type: str
+        value: dataflow
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+  '5':
+    '3': &id015
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Data flows
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id001
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Data flows
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id002
+        type: str
+        value: dataflow
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+  '6':
+    '1': &id012
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Contains
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: &id003
+        - white
+        - blue
+        - green
+        - yellow
+        - cyan
+        - lightpink
+        - lightblue
+        - gray
+        - lightgray
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Contains
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: &id004
+        - folding-relation
+        type: str
+        value: folding-relation
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+    '2': &id014
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Contains
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id003
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Contains
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id004
+        type: str
+        value: folding-relation
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+    '3': &id016
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Contains
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id003
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Contains
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id004
+        type: str
+        value: folding-relation
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+    '4': &id018
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Contains
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id003
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Contains
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id004
+        type: str
+        value: folding-relation
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+    '5': &id020
+      arrow-angle:
+        type: float
+        value: 0.3
+        visible: true
+      arrow-length:
+        type: float
+        value: 20
+        visible: true
+      caption:
+        type: str
+        value: Contains
+        visible: true
+      consume-time:
+        type: float
+        value: 1
+        visible: true
+      curve-angle:
+        type: float
+        value: 15
+        visible: true
+      description:
+        type: str
+        value: no description
+        visible: true
+      distance:
+        type: float
+        value: 1.0
+        visible: true
+      fill-color:
+        list: *id003
+        type: str
+        value: white
+        visible: true
+      filled:
+        type: bool
+        value: true
+        visible: true
+      font-height:
+        type: float
+        value: 10
+        visible: true
+      label:
+        type: str
+        value: Contains
+        visible: true
+      line-width:
+        type: float
+        value: 4
+        visible: true
+      ready:
+        type: bool
+        value: false
+        visible: true
+      show-label:
+        type: bool
+        value: true
+        visible: true
+      type:
+        list: *id004
+        type: str
+        value: folding-relation
+        visible: true
+      x-vector:
+        type: float
+        value: 1.0
+        visible: false
+      y-vector:
+        type: float
+        value: 1.0
+        visible: false
+_node: &id023
+  '1':
+    caption:
+      type: str
+      value: Storage
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list: &id005
+      - white
+      - blue
+      - green
+      - yellow
+      - cyan
+      - lightpink
+      - lightblue
+      - gray
+      - lightgray
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      type: str
+      value: ''
+      visible: true
+    label:
+      type: str
+      value: Storage
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list: &id006
+      - box
+      - doublebox
+      type: str
+      value: doublebox
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list: &id007
+      - storage
+      type: str
+      value: storage
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 24.0
+      visible: true
+    y:
+      type: float
+      value: 71.0
+      visible: true
+  '2':
+    caption:
+      type: str
+      value: Storage
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list: *id005
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      type: str
+      value: ''
+      visible: true
+    label:
+      type: str
+      value: Storage
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list: *id006
+      type: str
+      value: doublebox
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list: *id007
+      type: str
+      value: storage
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 325.0
+      visible: true
+    y:
+      type: float
+      value: 77.0
+      visible: true
+  '3':
+    caption:
+      type: str
+      value: Storage
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list: *id005
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      type: str
+      value: ''
+      visible: true
+    label:
+      type: str
+      value: Storage
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list: *id006
+      type: str
+      value: doublebox
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list: *id007
+      type: str
+      value: storage
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 622.0
+      visible: true
+    y:
+      type: float
+      value: 81.0
+      visible: true
+  '4':
+    caption:
+      type: str
+      value: Process
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list: &id008
+      - white
+      - blue
+      - green
+      - yellow
+      - cyan
+      - lightpink
+      - lightblue
+      - gray
+      - lightgray
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      list: &id009
+      - ''
+      - uml-folder
+      type: str
+      value: ''
+      visible: true
+    label:
+      type: str
+      value: Process
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list: &id010
+      - box
+      - doublebox
+      - circle
+      - doublecircle
+      type: str
+      value: circle
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list: &id011
+      - process
+      type: str
+      value: process
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 169.0
+      visible: true
+    y:
+      type: float
+      value: 71.0
+      visible: true
+  '5':
+    caption:
+      type: str
+      value: Process
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list: *id008
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      list: *id009
+      type: str
+      value: ''
+      visible: true
+    label:
+      type: str
+      value: Process
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list: *id010
+      type: str
+      value: circle
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list: *id011
+      type: str
+      value: process
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 479.0
+      visible: true
+    y:
+      type: float
+      value: 79.0
+      visible: true
+  '6':
+    caption:
+      type: str
+      value: Domain
+      visible: true
+    complexity:
+      type: float
+      value: 0
+      visible: true
+    consume-time:
+      type: float
+      value: 1
+      visible: true
+    description:
+      type: str
+      value: no description
+      visible: true
+    fill-color:
+      list:
+      - white
+      - blue
+      - green
+      - yellow
+      - cyan
+      - lightpink
+      - lightblue
+      - gray
+      - lightgray
+      type: str
+      value: white
+      visible: true
+    filled:
+      type: bool
+      value: true
+      visible: true
+    font-height:
+      type: float
+      value: 10
+      visible: true
+    h:
+      type: float
+      value: 80.0
+      visible: true
+    image-path:
+      list:
+      - ''
+      - uml-folder
+      type: str
+      value: uml-folder
+      visible: true
+    label:
+      type: str
+      value: Domain
+      visible: true
+    line-width:
+      type: float
+      value: 1
+      visible: true
+    ready:
+      type: bool
+      value: false
+      visible: true
+    shape:
+      list:
+      - box
+      - doublebox
+      - circle
+      - doublecircle
+      type: str
+      value: box
+      visible: true
+    show-label:
+      type: bool
+      value: true
+      visible: true
+    type:
+      list:
+      - domain
+      type: str
+      value: domain
+      visible: true
+    w:
+      type: float
+      value: 80.0
+      visible: true
+    x:
+      type: float
+      value: 327.0
+      visible: true
+    y:
+      type: float
+      value: 415.0
+      visible: true
+_pred:
+  '1':
+    '6': *id012
+  '2':
+    '4': *id013
+    '6': *id014
+  '3':
+    '5': *id015
+    '6': *id016
+  '4':
+    '1': *id017
+    '6': *id018
+  '5':
+    '2': *id019
+    '6': *id020
+  '6': {}
+_succ: *id021
+adjlist_inner_dict_factory: &id022 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id022
+edge_attr_dict_factory: *id022
+graph:
+  caption: Graph
+  constraints: {}
+  description: no description
+  functions: {}
+  h: 600
+  label: Graph
+  user-defined-functions: {}
+  variables: {}
+  w: 800
+  x: 0
+  y: 0
+graph_attr_dict_factory: *id022
+node_attr_dict_factory: *id022
+node_dict_factory: *id022
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id023
