@@ -824,11 +824,11 @@ _node: &id023
       visible: true
     x:
       type: float
-      value: 325.0
+      value: 467.0
       visible: true
     y:
       type: float
-      value: 77.0
+      value: 21.0
       visible: true
   '3':
     caption:
@@ -900,11 +900,11 @@ _node: &id023
       visible: true
     x:
       type: float
-      value: 622.0
+      value: 438.0
       visible: true
     y:
       type: float
-      value: 81.0
+      value: 377.0
       visible: true
   '4':
     caption:
@@ -993,11 +993,11 @@ _node: &id023
       visible: true
     x:
       type: float
-      value: 169.0
+      value: 193.0
       visible: true
     y:
       type: float
-      value: 71.0
+      value: 92.0
       visible: true
   '5':
     caption:
@@ -1070,11 +1070,11 @@ _node: &id023
       visible: true
     x:
       type: float
-      value: 479.0
+      value: 603.0
       visible: true
     y:
       type: float
-      value: 79.0
+      value: 172.0
       visible: true
   '6':
     caption:
@@ -1163,11 +1163,11 @@ _node: &id023
       visible: true
     x:
       type: float
-      value: 327.0
+      value: 64.0
       visible: true
     y:
       type: float
-      value: 415.0
+      value: 377.0
       visible: true
 _pred:
   '1':
@@ -1191,7 +1191,11 @@ adjlist_outer_dict_factory: *id022
 edge_attr_dict_factory: *id022
 graph:
   caption: Graph
-  constraints: {}
+  constraints:
+    c1:
+      equation: ''
+      description: ''
+      enabled: false
   description: no description
   functions: {}
   h: 600

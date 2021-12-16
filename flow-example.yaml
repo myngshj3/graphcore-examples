@@ -1,0 +1,1869 @@
+!!python/object:networkx.classes.digraph.DiGraph
+_adj: &id022
+  '1':
+    '2': &id013
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: &id001
+        - dataflow
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: &id002
+        - white
+        - blue
+        - green
+        - yellow
+        - cyan
+        - lightpink
+        - lightblue
+        - gray
+        - lightgray
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '2':
+    '3': &id014
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 5.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 5.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id001
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id002
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '3':
+    '4': &id015
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 2.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 2.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id001
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 30.0
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id002
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '4':
+    '5': &id016
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 1.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 1.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id001
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id002
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '5':
+    '6': &id017
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: &id003
+        - dataflow
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: &id004
+        - white
+        - blue
+        - green
+        - yellow
+        - cyan
+        - lightpink
+        - lightblue
+        - gray
+        - lightgray
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '6':
+    '7': &id018
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id003
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id004
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '7':
+    '8': &id019
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id003
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id004
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '8':
+    '11': &id020
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id003
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id004
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '9': {}
+  '10': {}
+  '11':
+    '12': &id021
+      velocity:
+        value: 0.0
+        type: float
+        visible: true
+      currentMaxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      maxVelocity:
+        value: 10.0
+        type: float
+        visible: true
+      label:
+        value: Data flows
+        type: str
+        visible: true
+      caption:
+        value: Data flows
+        type: str
+        visible: true
+      description:
+        value: data flow with velocity and max velocity
+        type: str
+        visible: true
+      type:
+        value: dataflow
+        type: str
+        visible: true
+        list: *id003
+      arrow-angle:
+        value: 0.3
+        type: float
+        visible: true
+      arrow-length:
+        value: 20
+        type: float
+        visible: true
+      curve-angle:
+        value: 15
+        type: float
+        visible: true
+      font-height:
+        value: 10
+        type: float
+        visible: true
+      distance:
+        value: 1.0
+        type: float
+        visible: true
+      consume-time:
+        value: 1
+        type: float
+        visible: true
+      ready:
+        value: false
+        type: bool
+        visible: true
+      x-vector:
+        value: 1.0
+        type: float
+        visible: false
+      y-vector:
+        value: 1.0
+        type: float
+        visible: false
+      show-label:
+        value: true
+        type: bool
+        visible: true
+      line-width:
+        value: 4
+        type: float
+        visible: true
+      fill-color:
+        value: white
+        type: str
+        visible: true
+        list: *id004
+      filled:
+        value: true
+        type: bool
+        visible: true
+  '12': {}
+_node: &id024
+  '1':
+    value:
+      value: 500000.0
+      type: float
+      visible: true
+    maxValue:
+      value: 500000.0
+      type: float
+      visible: true
+    label:
+      value: '1'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: &id005
+      - control-volume
+    x:
+      value: -240.0
+      type: float
+      visible: true
+    y:
+      value: 258.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: &id006
+      - circle
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: &id007
+      - white
+      - blue
+      - green
+      - yellow
+      - cyan
+      - lightpink
+      - lightblue
+      - gray
+      - lightgray
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: &id008
+      - ''
+  '2':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 300.0
+      type: float
+      visible: true
+    label:
+      value: '2'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id005
+    x:
+      value: -91.0
+      type: float
+      visible: true
+    y:
+      value: 259.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id006
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id007
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id008
+  '3':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 500.0
+      type: float
+      visible: true
+    label:
+      value: '3'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id005
+    x:
+      value: 51.0
+      type: float
+      visible: true
+    y:
+      value: 259.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id006
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id007
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id008
+  '4':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: '4'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id005
+    x:
+      value: 206.0
+      type: float
+      visible: true
+    y:
+      value: 259.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id006
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id007
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id008
+  '5':
+    value:
+      value: 0.0
+      type: float
+      visible: true
+    maxValue:
+      value: 1000000.0
+      type: float
+      visible: true
+    label:
+      value: '5'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id005
+    x:
+      value: 344.0
+      type: float
+      visible: true
+    y:
+      value: 259.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id006
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id007
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id008
+  '6':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: '6'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: &id009
+      - control-volume
+    x:
+      value: 500.0
+      type: float
+      visible: true
+    y:
+      value: 260.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: &id010
+      - circle
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: &id011
+      - white
+      - blue
+      - green
+      - yellow
+      - cyan
+      - lightpink
+      - lightblue
+      - gray
+      - lightgray
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: &id012
+      - ''
+  '7':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: '7'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 645.0
+      type: float
+      visible: true
+    y:
+      value: 258.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+  '8':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: '8'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 770.0
+      type: float
+      visible: true
+    y:
+      value: 265.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+  '9':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: Control-volume
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 1250
+      type: float
+      visible: true
+    y:
+      value: 408
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+  '10':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: Control-volume
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 1260
+      type: float
+      visible: true
+    y:
+      value: 393
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+  '11':
+    value:
+      value: 50.0
+      type: float
+      visible: true
+    maxValue:
+      value: 100.0
+      type: float
+      visible: true
+    label:
+      value: '9'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 898.0
+      type: float
+      visible: true
+    y:
+      value: 273.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+  '12':
+    value:
+      value: 0.0
+      type: float
+      visible: true
+    maxValue:
+      value: 1000000.0
+      type: float
+      visible: true
+    label:
+      value: '10'
+      type: str
+      visible: true
+    caption:
+      value: Control-volume
+      type: str
+      visible: true
+    description:
+      value: Control-volume with value and max value.
+      type: str
+      visible: true
+    type:
+      value: control-volume
+      type: str
+      visible: true
+      list: *id009
+    x:
+      value: 1036.0
+      type: float
+      visible: true
+    y:
+      value: 274.0
+      type: float
+      visible: true
+    w:
+      value: 80.0
+      type: float
+      visible: true
+    h:
+      value: 80.0
+      type: float
+      visible: true
+    shape:
+      value: circle
+      type: str
+      visible: true
+      list: *id010
+    font-height:
+      value: 10
+      type: float
+      visible: true
+    complexity:
+      value: 0
+      type: float
+      visible: true
+    consume-time:
+      value: 1
+      type: float
+      visible: true
+    ready:
+      value: false
+      type: bool
+      visible: true
+    show-label:
+      value: true
+      type: bool
+      visible: true
+    line-width:
+      value: 1
+      type: float
+      visible: true
+    fill-color:
+      value: white
+      type: str
+      visible: true
+      list: *id011
+    filled:
+      value: true
+      type: bool
+      visible: true
+    image-path:
+      value: ''
+      type: str
+      visible: false
+      list: *id012
+_pred:
+  '1': {}
+  '2':
+    '1': *id013
+  '3':
+    '2': *id014
+  '4':
+    '3': *id015
+  '5':
+    '4': *id016
+  '6':
+    '5': *id017
+  '7':
+    '6': *id018
+  '8':
+    '7': *id019
+  '9': {}
+  '10': {}
+  '11':
+    '8': *id020
+  '12':
+    '11': *id021
+_succ: *id022
+adjlist_inner_dict_factory: &id023 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id023
+edge_attr_dict_factory: *id023
+graph:
+  x: 0
+  y: 0
+  w: 800
+  h: 600
+  label: Graph
+  caption: Graph
+  description: no description
+  variables: {}
+  functions: {}
+  constraints: {}
+  user-defined-functions: {}
+graph_attr_dict_factory: *id023
+node_attr_dict_factory: *id023
+node_dict_factory: *id023
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id024
