@@ -1,0 +1,1094 @@
+{
+    "graphcore": {
+        "system-methods": {
+            "plus": {
+                "file": null,
+                "code": "function plus(x, y) { r = x + y; return r; }"
+            },
+            "minus": {
+                "file": null,
+                "code": "function minus(x, y) { r = x - y; return r; }"
+            },
+            "divide": {
+                "file": null,
+                "code": "function divide(x, y) { r = x / y; return r; }"
+            },
+            "mod": {
+                "file": null,
+                "code": "function mod(x, y) { r = x % y; return r; }"
+            }
+        }
+    },
+    "networkml": {
+        "log-config": "log4p.conf"
+    },
+    "system-constraints": {
+        "sc1": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['velocity']>=0",
+            "description": "Any value on control-volume node is greater than or equal to 0.",
+            "enabled": true
+        },
+        "sc2": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['maxValue']>=0",
+            "description": "Any maxValue on control-volume node is greater than or equal to 0.",
+            "enabled": true
+        },
+        "sc3": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['value']<=v['maxValue']",
+            "description": "Any value on control-volume node is less than or equal to maxValue.",
+            "enabled": true
+        }
+    },
+    "default-scene-attrs": {
+        "x": 0,
+        "y": 0,
+        "w": 800,
+        "h": 600,
+        "label": "Graph",
+        "caption": "Graph",
+        "description": "no description"
+    },
+    "enabled-node-types": [
+        "control-volume",
+        "signal-generator",
+        "domain",
+        "note"
+    ],
+    "default-node-attrs": {
+        "domain": {
+            "type": {
+                "value": "domain",
+                "type": "str",
+                "caption": "\u30ce\u30fc\u30c9\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "domain"
+                ]
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x\u5ea7\u6a19",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y\u5ea7\u6a19",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u5e45",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u9ad8\u3055",
+                "visible": true
+            },
+            "shape": {
+                "value": "box",
+                "type": "str",
+                "caption": "\u5f62\u72b6",
+                "visible": true,
+                "list": [
+                    "box",
+                    "doublebox",
+                    "circle",
+                    "doublecircle"
+                ]
+            },
+            "label": {
+                "value": "Domain",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "\u8907\u96d1\u3055",
+                "visible": true
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": true
+            },
+            "caption": {
+                "value": "Domain",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u7dda\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3057",
+                "visible": true
+            },
+            "image-path": {
+                "value": "uml-folder",
+                "type": "str",
+                "caption": "\u30a4\u30e1\u30fc\u30b8\u30d1\u30b9",
+                "visible": true,
+                "list": [
+                    "",
+                    "uml-folder"
+                ]
+            }
+        },
+        "control-volume": {
+            "type": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "\u30ce\u30fc\u30c9\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "control-volume"
+                ]
+            },
+            "value": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u5024",
+                "visible": true
+            },
+            "maxValue": {
+                "value": 99999999.0,
+                "type": "float",
+                "caption": "\u6700\u5927\u5024",
+                "visible": true
+            },
+            "label": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "caption": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x\u5ea7\u6a19",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y\u5ea7\u6a19",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u5e45",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u9ad8\u3055",
+                "visible": true
+            },
+            "shape": {
+                "value": "circle",
+                "type": "str",
+                "caption": "\u5f62\u72b6",
+                "visible": true,
+                "list": [
+                    "circle"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "\u8907\u96d1\u3055",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u30e9\u30a4\u30f3\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3057",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "\u30a4\u30e1\u30fc\u30b8\u30d1\u30b9",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        },
+        "signal-generator": {
+            "type": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "\u30ce\u30fc\u30c9\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "signal-generator"
+                ]
+            },
+            "value": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u5024",
+                "visible": true
+            },
+            "maxValue": {
+                "value": 1000.0,
+                "type": "float",
+                "caption": "\u6700\u5927\u5024",
+                "visible": true
+            },
+            "label": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "caption": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "generator-type": {
+                "value": "step",
+                "type": "str",
+                "caption": "\u751f\u6210\u30bf\u30a4\u30d7(\u4fe1\u53f7\u30bf\u30a4\u30d7)",
+                "visible": true,
+                "list": [
+                    "step",
+                    "normal",
+                    "uniform",
+                    "sin",
+                    "cos",
+                    "custom"
+                ]
+            },
+            "generator-equation": {
+                "value": "",
+                "type": "str",
+                "caption": "\u8a08\u7b97\u5f0f",
+                "visible": true
+            },
+            "generator-arg1": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "\u4fe1\u53f7\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\uff11",
+                "visible": true
+            },
+            "generator-arg2": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u4fe1\u53f7\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\uff12",
+                "visible": true
+            },
+            "generator-arg3": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u4fe1\u53f7\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\uff13",
+                "visible": true
+            },
+            "delay": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u751f\u6210\u958b\u59cb\u30bf\u30a4\u30df\u30f3\u30b0",
+                "visible": true
+            },
+            "duration": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "\u751f\u6210\u671f\u9593",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x\u5ea7\u6a19",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y\u5ea7\u6a19",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u5e45",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u9ad8\u3055",
+                "visible": true
+            },
+            "shape": {
+                "value": "doublecircle",
+                "type": "str",
+                "caption": "\u5f62\u72b6",
+                "visible": true,
+                "list": [
+                    "doublecircle"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "\u8907\u96d1\u3055",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u30e9\u30a4\u30f3\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3057",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "\u30a4\u30e1\u30fc\u30b8\u30d1\u30b9",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        },
+        "note": {
+            "type": {
+                "value": "note",
+                "type": "str",
+                "caption": "\u30ce\u30fc\u30c9\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "note"
+                ]
+            },
+            "label": {
+                "value": "note",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "caption": {
+                "value": "note",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x\u5ea7\u6a19",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y\u5ea7\u6a19",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u5e45",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "\u9ad8\u3055",
+                "visible": true
+            },
+            "shape": {
+                "value": "box",
+                "type": "str",
+                "caption": "\u5f62\u72b6",
+                "visible": true,
+                "list": [
+                    "box"
+                ]
+            },
+            "text-align": {
+                "value": "center-center",
+                "type": "str",
+                "caption": "\u30c6\u30ad\u30b9\u30c8\u63c3\u3048",
+                "visible": true,
+                "list": [
+                    "top-left",
+                    "top-center",
+                    "top-right",
+                    "center-left",
+                    "center-center",
+                    "center-right",
+                    "bottom-left",
+                    "bottom-center",
+                    "bottom-right"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u7dda\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3057",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "\u30a4\u30e1\u30fc\u30b8\u30d1\u30b9",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        }
+    },
+    "enabled-edge-types": [
+        "dataflow",
+        "folding-relation"
+    ],
+    "default-edge-attrs": {
+        "dataflow": {
+            "type": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "\u30a8\u30c3\u30b8\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "dataflow"
+                ]
+            },
+            "velocity": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u901f\u5ea6",
+                "visible": true
+            },
+            "maxVelocity": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "\u6700\u5927\u901f\u5ea6",
+                "visible": true
+            },
+            "currentMaxVelocity": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "\u73fe\u5728\u306e\u6700\u5927\u901f\u5ea6",
+                "visible": true
+            },
+            "acceleration": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "\u52a0\u901f\u5ea6",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "\u8ddd\u96e2",
+                "visible": true
+            },
+            "delay": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "\u958b\u59cb\u6642\u9593",
+                "visible": true
+            },
+            "duration": {
+                "value": 9999999.0,
+                "type": "float",
+                "caption": "\u671f\u9593",
+                "visible": true
+            },
+            "label": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "caption": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "\u77e2\u5370\u89d2\u5ea6",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "\u77e2\u5370\u306e\u9577\u3055",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "\u30ab\u30fc\u30d6\u89d2",
+                "visible": false
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": false
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "\u7dda\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3057",
+                "visible": true
+            }
+        },
+        "controlflow": {
+            "type": {
+                "value": "controlflow",
+                "type": "str",
+                "caption": "\u30a8\u30c3\u30b8\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "controlflow"
+                ]
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "\u77e2\u5370\u89d2\u5ea6",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "\u77e2\u5370\u9577",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "\u66f2\u7dda\u89d2",
+                "visible": true
+            },
+            "label": {
+                "value": "Contains",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "\u8ddd\u96e2",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": true
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": true
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "caption": {
+                "value": "Controls",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "\u7dda\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3059",
+                "visible": true
+            }
+        },
+        "folding-relation": {
+            "type": {
+                "value": "folding-relation",
+                "type": "str",
+                "caption": "\u30a8\u30c3\u30b8\u30bf\u30a4\u30d7",
+                "visible": true,
+                "list": [
+                    "folding-relation"
+                ]
+            },
+            "label": {
+                "value": "contains",
+                "type": "str",
+                "caption": "\u30e9\u30d9\u30eb",
+                "visible": true
+            },
+            "caption": {
+                "value": "contains",
+                "type": "str",
+                "caption": "\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "\u8a73\u7d30\u306e\u8a18\u8ff0",
+                "visible": true
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "\u77e2\u5370\u89d2\u5ea6",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "\u77e2\u5370\u9577",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "\u66f2\u7dda\u89d2",
+                "visible": false
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "\u30d5\u30a9\u30f3\u30c8\u9ad8\u3055",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "\u8ddd\u96e2",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "\u6d88\u5316\u6642\u9593",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "\u6e96\u5099\u5b8c\u4e86",
+                "visible": false
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y\u30d9\u30af\u30c8\u30eb",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u30e9\u30d9\u30eb\u3092\u8868\u793a\u3059\u308b",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "\u7dda\u5e45",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "\u5857\u308a\u3064\u3076\u3057\u8272",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "\u5857\u308a\u3064\u3076\u3059",
+                "visible": true
+            }
+        }
+    },
+    "script-editor": {
+        "x": -567,
+        "y": 266,
+        "width": 487,
+        "height": 796
+    },
+    "console": {
+        "x": 495,
+        "y": 659,
+        "width": 824,
+        "height": 325
+    },
+    "main-window": {
+        "x": -1921,
+        "y": -8,
+        "width": 1922,
+        "height": 1049
+    },
+    "main-window-left-pane": {
+        "x": 0,
+        "y": 0,
+        "width": 510,
+        "height": 948
+    },
+    "main-window-left-top-pane": {
+        "x": 0,
+        "y": 0,
+        "width": 508,
+        "height": 702
+    },
+    "editor-tab-widget": {
+        "tab-index": 3
+    },
+    "message-tab-widget": {
+        "tab-index": 0
+    },
+    "solver-controller": {
+        "x": -1741,
+        "y": 132,
+        "width": 481,
+        "height": 946
+    }
+}

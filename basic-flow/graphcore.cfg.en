@@ -1,0 +1,1094 @@
+{
+    "graphcore": {
+        "system-methods": {
+            "plus": {
+                "file": null,
+                "code": "function plus(x, y) { r = x + y; return r; }"
+            },
+            "minus": {
+                "file": null,
+                "code": "function minus(x, y) { r = x - y; return r; }"
+            },
+            "divide": {
+                "file": null,
+                "code": "function divide(x, y) { r = x / y; return r; }"
+            },
+            "mod": {
+                "file": null,
+                "code": "function mod(x, y) { r = x % y; return r; }"
+            }
+        }
+    },
+    "networkml": {
+        "log-config": "log4p.conf"
+    },
+    "system-constraints": {
+        "sc1": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['velocity']>=0",
+            "description": "Any value on control-volume node is greater than or equal to 0.",
+            "enabled": true
+        },
+        "sc2": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['maxValue']>=0",
+            "description": "Any maxValue on control-volume node is greater than or equal to 0.",
+            "enabled": true
+        },
+        "sc3": {
+            "equation": "forall v in Nodes('type'==\"control-volume\") : v['value']<=v['maxValue']",
+            "description": "Any value on control-volume node is less than or equal to maxValue.",
+            "enabled": true
+        }
+    },
+    "default-scene-attrs": {
+        "x": 0,
+        "y": 0,
+        "w": 800,
+        "h": 600,
+        "label": "Graph",
+        "caption": "Graph",
+        "description": "no description"
+    },
+    "enabled-node-types": [
+        "control-volume",
+        "signal-generator",
+        "domain",
+        "note"
+    ],
+    "default-node-attrs": {
+        "domain": {
+            "type": {
+                "value": "domain",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "domain"
+                ]
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "w",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "h",
+                "visible": true
+            },
+            "shape": {
+                "value": "box",
+                "type": "str",
+                "caption": "shape",
+                "visible": true,
+                "list": [
+                    "box",
+                    "doublebox",
+                    "circle",
+                    "doublecircle"
+                ]
+            },
+            "label": {
+                "value": "Domain",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "complexity",
+                "visible": true
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": true
+            },
+            "caption": {
+                "value": "Domain",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            },
+            "image-path": {
+                "value": "uml-folder",
+                "type": "str",
+                "caption": "image-path",
+                "visible": true,
+                "list": [
+                    "",
+                    "uml-folder"
+                ]
+            }
+        },
+        "control-volume": {
+            "type": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "control-volume",
+                "visible": true,
+                "list": [
+                    "control-volume"
+                ]
+            },
+            "value": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "value",
+                "visible": true
+            },
+            "maxValue": {
+                "value": 99999999.0,
+                "type": "float",
+                "caption": "maxValue",
+                "visible": true
+            },
+            "label": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "caption": {
+                "value": "control-volume",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "w",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "h",
+                "visible": true
+            },
+            "shape": {
+                "value": "circle",
+                "type": "str",
+                "caption": "shape",
+                "visible": true,
+                "list": [
+                    "circle"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "complexity",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "image-path",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        },
+        "signal-generator": {
+            "type": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "signal-generator"
+                ]
+            },
+            "value": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "value",
+                "visible": true
+            },
+            "maxValue": {
+                "value": 1000.0,
+                "type": "float",
+                "caption": "maxValue",
+                "visible": true
+            },
+            "label": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "caption": {
+                "value": "signal-generator",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "generator-type": {
+                "value": "step",
+                "type": "str",
+                "caption": "generator-type",
+                "visible": true,
+                "list": [
+                    "step",
+                    "normal",
+                    "uniform",
+                    "sin",
+                    "cos",
+                    "custom"
+                ]
+            },
+            "generator-equation": {
+                "value": "",
+                "type": "str",
+                "caption": "generator-equation",
+                "visible": true
+            },
+            "generator-arg1": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "generator-arg1",
+                "visible": true
+            },
+            "generator-arg2": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "generator-arg2",
+                "visible": true
+            },
+            "generator-arg3": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "generator-arg3",
+                "visible": true
+            },
+            "delay": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "delay",
+                "visible": true
+            },
+            "duration": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "duration",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "w",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "h",
+                "visible": true
+            },
+            "shape": {
+                "value": "doublecircle",
+                "type": "str",
+                "caption": "shape",
+                "visible": true,
+                "list": [
+                    "doublecircle"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "complexity": {
+                "value": 0,
+                "type": "float",
+                "caption": "complexity",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "image-path",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        },
+        "note": {
+            "type": {
+                "value": "note",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "note"
+                ]
+            },
+            "label": {
+                "value": "note",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "caption": {
+                "value": "note",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "x": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "x",
+                "visible": true
+            },
+            "y": {
+                "value": 100.0,
+                "type": "float",
+                "caption": "y",
+                "visible": true
+            },
+            "w": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "w",
+                "visible": true
+            },
+            "h": {
+                "value": 80.0,
+                "type": "float",
+                "caption": "h",
+                "visible": true
+            },
+            "shape": {
+                "value": "box",
+                "type": "str",
+                "caption": "shape",
+                "visible": true,
+                "list": [
+                    "box"
+                ]
+            },
+            "text-align": {
+                "value": "center-center",
+                "type": "str",
+                "caption": "text-align",
+                "visible": true,
+                "list": [
+                    "top-left",
+                    "top-center",
+                    "top-right",
+                    "center-left",
+                    "center-center",
+                    "center-right",
+                    "bottom-left",
+                    "bottom-center",
+                    "bottom-right"
+                ]
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 1,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            },
+            "image-path": {
+                "value": "",
+                "type": "str",
+                "caption": "image-path",
+                "visible": false,
+                "list": [
+                    ""
+                ]
+            }
+        }
+    },
+    "enabled-edge-types": [
+        "dataflow",
+        "folding-relation"
+    ],
+    "default-edge-attrs": {
+        "dataflow": {
+            "type": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "dataflow"
+                ]
+            },
+            "velocity": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "velocity",
+                "visible": true
+            },
+            "maxVelocity": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "maxVelocity",
+                "visible": true
+            },
+            "currentMaxVelocity": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "currentMaxVelocity",
+                "visible": true
+            },
+            "acceleration": {
+                "value": 10.0,
+                "type": "float",
+                "caption": "acceleration",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "distance",
+                "visible": true
+            },
+            "delay": {
+                "value": 0.0,
+                "type": "float",
+                "caption": "delay",
+                "visible": true
+            },
+            "duration": {
+                "value": 9999999.0,
+                "type": "float",
+                "caption": "duration",
+                "visible": true
+            },
+            "label": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "caption": {
+                "value": "dataflow",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "arrow-angle",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "arrow-length",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "curve-angle",
+                "visible": false
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": false
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x-vector",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y-vector",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            }
+        },
+        "controlflow": {
+            "type": {
+                "value": "controlflow",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "controlflow"
+                ]
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "arrow-angle",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "arrow-length",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "curve-angle",
+                "visible": true
+            },
+            "label": {
+                "value": "Contains",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "distance",
+                "visible": true
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": true
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": true
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x-vector",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y-vector",
+                "visible": false
+            },
+            "caption": {
+                "value": "Controls",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            }
+        },
+        "folding-relation": {
+            "type": {
+                "value": "folding-relation",
+                "type": "str",
+                "caption": "type",
+                "visible": true,
+                "list": [
+                    "folding-relation"
+                ]
+            },
+            "label": {
+                "value": "contains",
+                "type": "str",
+                "caption": "label",
+                "visible": true
+            },
+            "caption": {
+                "value": "contains",
+                "type": "str",
+                "caption": "caption",
+                "visible": true
+            },
+            "description": {
+                "value": "no description",
+                "type": "str",
+                "caption": "description",
+                "visible": true
+            },
+            "arrow-angle": {
+                "value": 0.3,
+                "type": "float",
+                "caption": "arrow-angle",
+                "visible": true
+            },
+            "arrow-length": {
+                "value": 20,
+                "type": "float",
+                "caption": "arrow-length",
+                "visible": true
+            },
+            "curve-angle": {
+                "value": 15,
+                "type": "float",
+                "caption": "curve-angle",
+                "visible": false
+            },
+            "font-height": {
+                "value": 10,
+                "type": "float",
+                "caption": "font-height",
+                "visible": true
+            },
+            "distance": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "distance",
+                "visible": false
+            },
+            "consume-time": {
+                "value": 1,
+                "type": "float",
+                "caption": "consume-time",
+                "visible": false
+            },
+            "ready": {
+                "value": false,
+                "type": "bool",
+                "caption": "ready",
+                "visible": false
+            },
+            "x-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "x",
+                "visible": false
+            },
+            "y-vector": {
+                "value": 1.0,
+                "type": "float",
+                "caption": "y",
+                "visible": false
+            },
+            "show-label": {
+                "value": true,
+                "type": "bool",
+                "caption": "show-label",
+                "visible": true
+            },
+            "line-width": {
+                "value": 4,
+                "type": "float",
+                "caption": "line-width",
+                "visible": true
+            },
+            "fill-color": {
+                "value": "white",
+                "type": "str",
+                "caption": "fill-color",
+                "visible": true,
+                "list": [
+                    "white",
+                    "blue",
+                    "green",
+                    "yellow",
+                    "cyan",
+                    "lightpink",
+                    "lightblue",
+                    "gray",
+                    "lightgray"
+                ]
+            },
+            "filled": {
+                "value": true,
+                "type": "bool",
+                "caption": "filled",
+                "visible": true
+            }
+        }
+    },
+    "script-editor": {
+        "x": -567,
+        "y": 266,
+        "width": 487,
+        "height": 796
+    },
+    "console": {
+        "x": 495,
+        "y": 659,
+        "width": 824,
+        "height": 325
+    },
+    "main-window": {
+        "x": -1921,
+        "y": -8,
+        "width": 1922,
+        "height": 1049
+    },
+    "main-window-left-pane": {
+        "x": 0,
+        "y": 0,
+        "width": 510,
+        "height": 948
+    },
+    "main-window-left-top-pane": {
+        "x": 0,
+        "y": 0,
+        "width": 508,
+        "height": 702
+    },
+    "editor-tab-widget": {
+        "tab-index": 3
+    },
+    "message-tab-widget": {
+        "tab-index": 0
+    },
+    "solver-controller": {
+        "x": -1741,
+        "y": 132,
+        "width": 481,
+        "height": 946
+    }
+}
